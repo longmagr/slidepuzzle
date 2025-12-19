@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sliding Puzzle</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+
+  <!-- Info panel -->
+  <div id="info-box" aria-hidden="true">
+    <h2>‧₊˚🎄✩ ₊˚🦌⊹♡ LonGMa</h2>
+    <p><b style="color: blue; font-family: 'Courier New';">Εργαστηριο χειροποίητων δημιουργιών</b></p>
+     <small style="display:block; margin-top:5px; opacity:.8; font-family: Comic Sans MS "> amigurumi ,κόσμημα </small>
+     <small style="display:block; margin-top:12px; opacity:.8; font-family: Comic Sans MS ">
+    Οδηγίες: Διάλεξε μια εικονα να παίξεις με αυτο το slide puzzle. Η προκαθορισμένη δυσκολία ειναι "Μεσαία".
+
+    </small>
+    <a id="info-link" href="https://taplink.cc/longma" target="_blank">
+  <b style="color: green; font-family: 'Courier New';">Συνδεσμοι εργαστηρίου</b>
+</a>
+
+      <button id="info-close">✕</button>
+    </div>
+  <main class="container">
+    <div id="game-wrapper">
+      <div id="layout-wrapper">
+        <div id="thumbs-left" class="thumb-column"></div>
+        <div id="board-frame">
+          <div id="board">
+            <div id="board-cover">
+              <img src="https://i.postimg.cc/LX7KK67k/longma.jpg" alt="cover" />
+              <div class="cover-text">Διάλεξε εικόνα για να παίξεις</div>
+            </div>
+          </div>
+           <div id="overlay">
+            <div class="overlay-card">
+                        </div>
+          </div>
+        </div>
+
+        <div id="right-controls" aria-hidden="true">
+          <!-- Info button -->
+  <button id="info-btn"><b style="color: white; font-family: 'Courier New';">ℹ️</button></b>
+          <button id="undo" class="side-btn">↩️ Undo</button>
+          <button id="hint" class="side-btn">💡 Hint</button>
+          <button id="solve" class="side-btn">✅ Λύση</button>
+          <div id="difficulty">
+ <button data-moves="40" data-size="3"class="active">Εύκολο</button>
+<button data-moves="55" data-size="4" >Μεσαίο</button>
+<button data-moves="40" data-size="5">Δύσκολο</button>
+</div>
+        </div>
+      </div>
+<div id="center-sparkles">✨✨✨</div>
+      
+      <div id="thumbs-bottom" class="thumb-row"></div>
+               </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
