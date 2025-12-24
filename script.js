@@ -326,7 +326,7 @@ function askContinue() {
 
   modal.innerHTML = `
     <div class="continue-box">
-      <p><b>Θες να συνεχίσεις με τοε;</b></p>
+      <p><b>Θες να συνεχίσεις με το επόμενο;</b></p>
       <button class="btn-yes">Ναι</button>
       <button class="btn-no">Όχι</button>
     </div>
