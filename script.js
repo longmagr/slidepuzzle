@@ -493,7 +493,7 @@ function createSnowflake() {
   snow.className = "snowflake";
 
   // τυχαία νιφάδα
-  snow.textContent = Math.random() > 0.6 ? "❄" : "❅";
+ snow.textContent = Math.random() > 0.6 ? "♡ ︎" : "❀";
 
   const size = Math.random() * 12 + 10;
   snow.style.fontSize = size + "px";
@@ -524,4 +524,5 @@ const snowInterval = setInterval(createSnowflake, 250);
 setInterval(() => {
   windStrength = Math.random() * 160 + 40;
 }, 4000);
+
 
